@@ -103,6 +103,64 @@ nav {
     border-radius: 50%;
     font-weight: 100; }
 
+.slide {
+  height: 50.7vw; }
+  .slide img {
+    height: 100%; }
+
+@media screen and (max-width: 576px) {
+  .slide {
+    height: 70vw; } }
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 6;
+  transform: translateY(-50%); }
+  .overlay .container {
+    padding-left: 7vw; }
+
+.text {
+  padding-left: 30px; }
+  .text h1 {
+    font-size: 4.1vw;
+    color: #ff7013;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 2vw; }
+  .text p {
+    margin-bottom: 0px;
+    color: #4c5964;
+    font-size: 18px; }
+  @media screen and (max-width: 576px) {
+    .text h1 {
+      font-size: 7vw; }
+    .text p {
+      font-size: 16px; }
+    .text p.description {
+      font-size: 14px; } }
+  .text .description {
+    font-size: 1em;
+    color: #5b6975; }
+  .text .buy {
+    margin-top: 4vw; }
+  .text .order {
+    padding: 0 30px;
+    position: relative;
+    color: #ff7013;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 24px; }
+  .text .order:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 18px;
+    background: url(../icons/Cart-Ico.png) no-repeat; }
+
 body {
   background-color: #f6f8f9;
   font-family: 'Harmonia Sans Pro Cyr'; }
