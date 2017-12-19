@@ -16,15 +16,74 @@
 -->
 <script src="js/owl.carousel.js"></script>
 </head>
-<body style="background-color:#f6f8f9">
+<body>
 <header>
 	<!-- navbar contacts-->
-	<nav style="height:60px; background-color: white;border-bottom:1px solid #ebecef">
-		<div class="container"></div>
+	<nav class="navbar navbar-expand-lg contacts">
+		<div class="container">
+			<div class="left">
+				<span class="mail">info@shopy.com</span>
+				<span class="telefone">453 - 5553 - 996</span>
+			</div>
+			<div class="post-social">
+				<a href="" target="_blank">
+					<img src="icons/facebook.png" alt="facebook"></a>
+				<a href="" target="_blank">
+					<img src="icons/twitter.png" alt="twitter"></a>
+				<a href="" target="_blank">
+					<img src="icons/google-+.png" alt="google"></a>
+				<a href="" target="_blank">
+					<img src="icons/instegram.png" alt="instegram"></a>
+			</div>
+		</div>
 	</nav >
 	<!-- navbar navigation -->
-	<nav style="height:120px;background-color: white">
-		<div class="container"></div>
+	<nav class="navbar  navbar-expand-lg navbar-light navigation">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="logo">
+				<a class="navbar-brand" href="#">
+					<span>sh</span>
+					<span>py</span>
+					<span>shope any where</span>
+				</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mt-2 mt-lg-0 mr-auto">
+					<li class="nav-item nav-li-main active">
+						<a class="nav-link nav-link-main" href="#">
+							Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item nav-li-main">
+						<a class="nav-link nav-link-main" href="#">Products</a>
+					</li>
+					<li class="nav-item nav-li-main">
+						<a class="nav-link nav-link-main" href="#">Hot Deals</a>
+					</li>
+					<li class="nav-item nav-li-main">
+						<a class="nav-link nav-link-main" href="#">About</a>
+					</li>
+					<li class="nav-item-nav-li-main">
+						<a class="nav-link nav-link-main" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="icons-nav">
+				<a href="" target="_blank">
+					<img src="icons/Search-Ico.png" alt="search"></a>
+				<a href="" target="_blank">
+					<img src="icons/User-Ico.png" alt="user"></a>
+				<a href="" target="_blank">
+					<img src="icons/Cart-Ico.png" alt="cart">
+					<span>5</span>
+				</a>
+			</div>
+		</div>
 	</nav>
 </header>
 <!-- main content -->
@@ -37,9 +96,15 @@
 			<div class="col-12"></div>
 		</div>
 		<div class="row" style="margin-bottom: 30px;">
-			<div class="col-lg-4"><div class="card product" style="height:368px"></div></div>
-			<div class="col-lg-4"><div class="card product" style="height:368px"></div></div>
-			<div class="col-lg-4"><div class="card product" style="height:368px"></div></div>
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<div class="card product" style="height:368px"></div>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<div class="card product" style="height:368px"></div>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<div class="card product" style="height:368px"></div>
+			</div>
 		</div>
 		<!-- pagination -->
 		<div class="row" style="background-color: white; margin-bottom: 30px;">
@@ -58,9 +123,15 @@
 			<div class="col-12"></div>
 		</div>
 		<div class="row" style="margin-bottom: 30px;">
-			<div class="col-4"><div class="card product" style="height:160px"></div></div>
-			<div class="col-4"><div class="card product" style="height:160px"></div></div>
-			<div class="col-4"><div class="card product" style="height:160px"></div></div>
+			<div class="col-sm-12 col-md-3 col-lg-4">
+				<div class="card product" style="height:160px"></div>
+			</div>
+			<div class="col-sm-12 col-md-3 col-lg-4">
+				<div class="card product" style="height:160px"></div>
+			</div>
+			<div class="col-sm-12 col-md-3 col-lg-4">
+				<div class="card product" style="height:160px"></div>
+			</div>
 		</div>
 
 		<!-- news letter -->
@@ -72,20 +143,20 @@
 	</div>
 </main>
 <!-- footer -->
-<footer>
+<footer style="background-color: white;height:125px">
 	<div class="container">
-		<div class="row" style="background-color: white;height:125px">
-			<div class="col-3 card"></div>
+		<div class="row" >
+			<div class="col-3"></div>
 			<div class="col-6">
 				<div class="row h-100">
-					<div class="col-4 card"></div>
-					<div class="col-4 card"></div>
-					<div class="col-4 card"></div>
+					<div class="col-4"></div>
+					<div class="col-4"></div>
+					<div class="col-4"></div>
 				</div>
 			</div>
-				<div class="col-3 card"></div>
-			</div>
+			<div class="col-3"></div>
 		</div>
-	</footer>
+	</div>
+</footer>
 </body>
 </html>
