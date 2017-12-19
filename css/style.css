@@ -132,14 +132,14 @@ nav {
   .text p {
     margin-bottom: 0px;
     color: #4c5964;
-    font-size: 18px; }
+    font-size: 1.125em; }
   @media screen and (max-width: 576px) {
     .text h1 {
       font-size: 7vw; }
     .text p {
-      font-size: 16px; }
+      font-size: 1em; }
     .text p.description {
-      font-size: 14px; } }
+      font-size: 0.875em; } }
   .text .description {
     font-size: 1em;
     color: #5b6975; }
@@ -149,7 +149,7 @@ nav {
     padding: 0 30px;
     position: relative;
     color: #ff7013;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 600;
     margin-left: 24px; }
   .text .order:before {
@@ -161,8 +161,69 @@ nav {
     height: 18px;
     background: url(../icons/Cart-Ico.png) no-repeat; }
 
+.col-header {
+  margin-bottom: 5.8vw; }
+  .col-header h1 {
+    font-weight: 900;
+    font-size: 2.25em;
+    color: #43525d;
+    margin-bottom: 17px; }
+    .col-header h1 span {
+      color: #ff7013; }
+  .col-header p {
+    color: #43525d;
+    font-size: 1em;
+    margin-bottom: 0; }
+
+.row-product {
+  margin-bottom: 38px; }
+  .row-product .product {
+    height: 365px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: bold; }
+    .row-product .product p {
+      margin-bottom: 16px;
+      color: #34404b; }
+    .row-product .product span {
+      color: #ff5912; }
+
+.image {
+  height: 270px; }
+  .image img {
+    width: 140px;
+    margin-top: 30px; }
+
+.card-focus img {
+  width: 80px; }
+
+.row-page {
+  padding: 0 15px; }
+
+.col-page {
+  height: 60px;
+  line-height: 60px;
+  background-color: white; }
+
+.page-dots {
+  display: inline-block; }
+  .page-dots div {
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    background-color: #ff7013;
+    border-radius: 50%;
+    margin-right: 4px;
+    display: inline-block; }
+
 body {
   background-color: #f6f8f9;
   font-family: 'Harmonia Sans Pro Cyr'; }
+
+.main {
+  margin-top: 9.4vw; }
 
 /*# sourceMappingURL=style.css.map */

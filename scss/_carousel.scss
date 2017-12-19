@@ -1,5 +1,7 @@
 $orange:#ff7013;
 $break-sm:576px;
+$size:1.125em;
+
 .slide{
 	height:50.7vw;
 	
@@ -36,17 +38,17 @@ $break-sm:576px;
 	p{
 		margin-bottom: 0px;
 		color:#4c5964;
-		font-size: 18px;
+		font-size: $size;
 	}
 	@media screen and (max-width: $break-sm){
 		h1{
 			font-size: 7vw;
 		}
 		p {
-		font-size: 16px;
+		font-size: 1em;
 	}
 	p.description{
-font-size: 14px;
+font-size: 0.875em;
 	}
 
 	}
@@ -56,14 +58,13 @@ font-size: 14px;
 		color:#5b6975;
 }
 .buy{
-	// margin-top: 58px;
 	margin-top: 4vw;
 }
 .order{
 	padding:0 30px;
 	position: relative;
 	color:$orange;
-	font-size: 18px;
+	font-size: $size;
 	font-weight: 600;
 	margin-left: 24px;
 }

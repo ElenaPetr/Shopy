@@ -1,0 +1,72 @@
+$header-size:2.25em;
+
+.col-header{
+	// margin-bottom: 73px;
+	margin-bottom: 5.8vw;
+	h1{
+		font-weight: 900;
+		 font-size:$header-size;
+		color:#43525d;
+		margin-bottom: 17px;
+		span{
+			color:$orange;
+		}
+	}
+	p{
+		color:#43525d;
+		font-size: 1em;
+		margin-bottom: 0;
+	}
+}
+.row-product{
+	margin-bottom: 38px;
+	.product{
+		height:365px;
+		border:none;
+		border-radius: 0;
+		margin-bottom: 30px;
+		text-align: center;
+		font-size:$size; 
+		font-weight: bold;
+		p{
+			margin-bottom: 16px;
+			color:#34404b;
+		}
+		span{
+			color:#ff5912;
+		}
+	}
+
+	}
+	.image{
+		height: 270px;
+		img{
+  width:140px;
+  margin-top: 30px;
+	}
+}
+.card-focus{
+		img{
+			width:80px;
+		}
+}
+.row-page{
+	padding:0 15px;
+}
+.col-page{
+	height:60px;
+	line-height: 60px;
+	background-color: white;
+}
+.page-dots{
+display: inline-block;
+	div{
+		vertical-align: middle;
+		width:8px;
+		height:8px;
+		background-color:$orange;
+		border-radius: 50%;
+		margin-right:4px;
+		display: inline-block;
+	}
+}

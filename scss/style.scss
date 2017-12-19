@@ -1,8 +1,14 @@
 @import 'navbar';
 @import 'nav-navigation';
 @import 'carousel';
+@import 'product';
+
 
 body{
 	background-color: #f6f8f9;
 	font-family: 'Harmonia Sans Pro Cyr';
 }
+.main{
+	margin-top:9.4vw;
+}
+
