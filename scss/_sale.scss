@@ -1,9 +1,62 @@
-.col-sale{
-	height: 100px;
+.sale-div{
+	min-height: 100px;
 	background-color: white;
+	position: relative;
+	text-align: center;
+	width:100%;
+	margin-bottom: 30px;
+	
+	.sale-logo, .sale-description, .sale-price{
+		display: inline-block;
+		text-align: center;
+	}
+	.sale-logo{
+		width:200px;
+		text-align: center;
+	}
+	.sale-price{
+		width:30%;
+		img{
+			margin-right: 20px;
+			vertical-align: baseline;
+		}
+		p{
+			color:#ff5912;
+			font-size:28px;
+			font-weight: 900;
+			line-height: 1;
+			margin-bottom: 0;
+			position: relative;
+			display: inline-block;
+		}
+		span{
+			font-size: 20px;
+		}
+		
+	}
+.sale-description{
 	h1{
 	color:#34404b;
 	font-size: 1.375em;
-	font-weight: 600;
+	font-weight: 900;
+	text-transform: uppercase;
+	}
+	p{
+		color:#495662;
+		font-size: 12px;
+	}
 	}
 }
+	.card-text{
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 1em;
+	.sale-size{
+		color:#e1e3e5;
+		font-size: 12px;
+		letter-spacing: 6px;
+	}
+	span{
+		color:$orange;
+	}
+	}

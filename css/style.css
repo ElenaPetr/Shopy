@@ -220,17 +220,56 @@ nav {
     margin-right: 4px;
     display: inline-block; }
 
-.col-sale {
-  height: 100px;
-  background-color: white; }
-  .col-sale h1 {
+.sale-div {
+  min-height: 100px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px; }
+  .sale-div .sale-logo, .sale-div .sale-description, .sale-div .sale-price {
+    display: inline-block;
+    text-align: center; }
+  .sale-div .sale-logo {
+    width: 200px;
+    text-align: center; }
+  .sale-div .sale-price {
+    width: 30%; }
+    .sale-div .sale-price img {
+      margin-right: 20px;
+      vertical-align: baseline; }
+    .sale-div .sale-price p {
+      color: #ff5912;
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 0;
+      position: relative;
+      display: inline-block; }
+    .sale-div .sale-price span {
+      font-size: 20px; }
+  .sale-div .sale-description h1 {
     color: #34404b;
     font-size: 1.375em;
-    font-weight: 600; }
+    font-weight: 900;
+    text-transform: uppercase; }
+  .sale-div .sale-description p {
+    color: #495662;
+    font-size: 12px; }
+
+.card-text {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 1em; }
+  .card-text .sale-size {
+    color: #e1e3e5;
+    font-size: 12px;
+    letter-spacing: 6px; }
+  .card-text span {
+    color: #ff7013; }
 
 .sale {
   display: inline-block;
-  margin: 30px 50px;
   position: relative;
   z-index: 50; }
 
@@ -294,8 +333,7 @@ nav {
     border-left: 1px solid #f7f7f8;
     padding: 0 30px;
     font-weight: bold;
-    vertical-align: middle;
-    text-align: justify; }
+    vertical-align: middle; }
     .best-sales .card-text p {
       color: #34404b;
       font-size: 1.125em;
