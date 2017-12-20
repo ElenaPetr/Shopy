@@ -1,0 +1,47 @@
+.sale{
+	display: inline-block;
+	margin:30px 50px;
+	position: relative;
+	z-index: 50;
+}
+.sale p{
+	margin-top: 7px;
+	font-size: 12px;
+	color:#ffffff;
+	font-style: italic;
+}
+.sale p:last-child{
+	position: absolute;
+	top:11px;
+	left:-50%;
+	margin-top: 10px;
+	font-size:$size;
+	font-style: normal;
+	font-weight: 900;
+}
+.sale:before{
+	content: "";
+	position: absolute;
+	top:-8px;
+	left:-25px;
+	display: inline-block;
+	width:43px;
+	height:35px;
+	background-color: $orange;
+	transform: skew(45deg, -45deg);
+	transform-origin: 87% 15%;
+	z-index: -1;
+}
+.sale:after{
+	content: "";
+	position: absolute;
+	top:8.5px;
+	left:-12.5px;
+	display: inline-block;
+	width:43px;
+	height:35px;
+	background-color: #ffa273;
+	transform: skew(-45deg, 45deg);
+	z-index: -2;
+}
+

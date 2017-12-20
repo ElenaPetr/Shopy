@@ -1,0 +1,40 @@
+.best-sales{
+	min-height:160px;
+	background-color: white;
+	margin-bottom: 30px;
+	width:100%;
+	position: relative;
+	text-align: center;
+	.image-sales{
+		line-height: 160px;
+		display: inline-block;
+		width:37%;
+		text-align: center;
+	}
+	img{
+		width:90px;
+		margin: 0 auto;
+	}
+	.card-text{
+		display: inline-block;
+		border-left: 1px solid #f7f7f8;
+		padding: 0 30px;
+		font-weight: bold;
+		vertical-align: middle;
+		text-align: justify;
+		p{
+		color:#34404b;
+		font-size: $size;
+		margin-top: -13px;
+		}
+		span{
+			color:#ff5912;
+			float:left;
+		}
+		span:last-child{
+			float:right;
+		}
+		
+	}
+
+}

@@ -2,6 +2,9 @@
 @import 'nav-navigation';
 @import 'carousel';
 @import 'product';
+@import 'sale';
+@import 'sale-badge';
+@import 'best-sales';
 
 
 body{
@@ -9,6 +12,13 @@ body{
 	font-family: 'Harmonia Sans Pro Cyr';
 }
 .main{
-	margin-top:9.4vw;
+	margin:9.4vw auto 0 auto;
+	padding: 0 2.494%;
+}
+.container {
+	max-width:1400px;
+}
+.row-main{
+	margin:0;
 }
 
