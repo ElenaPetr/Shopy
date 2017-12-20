@@ -6,33 +6,36 @@
 	height:80px;
 }
 .sale p{
-	font-size: 12px;
+	font-size: 11px;
 	color:#ffffff;
 	font-style: italic;
 	margin-bottom: 0;
+	
 }
 .sale p:first-child{
 	position: absolute;
-	top:21%;
-	left:38%;
+	top:25%;
+	left:35%;
+	letter-spacing: 1px;
+	// font-weight:100;
 }
 .sale p:last-child{
 	position: absolute;
-	top:26%;
-	left:22%;
+	top:28%;
+	left:24%;
 	margin-top: 10px;
 	font-size:$size;
 	font-style: normal;
-	font-weight: 900;
+	font-weight: 700;
 }
 .sale:before{
 	content: "";
 	position: absolute;
 	top:5px;
-	left:5px;
+	left:4px;
 	display: inline-block;
 	width:43px;
-	height:35px;
+	height:36px;
 	background-color: $orange;
 	transform: skew(45deg, -45deg);
 	transform-origin: 87% 15%;
@@ -45,7 +48,7 @@
 	left:16.5px;
 	display: inline-block;
 	width:43px;
-	height:35px;
+	height:36px;
 	background-color: #ffa273;
 	transform: skew(-45deg, 45deg);
 	z-index: -2;

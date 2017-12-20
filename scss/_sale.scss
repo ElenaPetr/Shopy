@@ -1,3 +1,5 @@
+
+$break-sm: 576px;
 .sale-div{
 	min-height: 100px;
 	background-color: white;
@@ -12,17 +14,11 @@
 		vertical-align: middle;
 	}
 	.sale-logo{
-		width:30%;
-		text-align: center;
-		
+		padding:0 4vw 0 2vw;
+
 	}
 	.sale-price{
 		width:30%;
-		line-height: 80px;
-		img{
-			margin-right: 20px;
-			vertical-align: baseline;
-		}
 		p{
 			color:#ff5912;
 			font-size:28px;
@@ -31,6 +27,17 @@
 			margin-bottom: 0;
 			position: relative;
 			display: inline-block;
+
+
+		}
+		p:before{
+			position: absolute;
+			content: "";
+			width:25px;
+			height:24px;
+			top:3px;
+			left:-42px;
+			background: url(../icons/Add-To-Cart-Ico-.png) no-repeat;
 		}
 		span{
 			font-size: 20px;
@@ -38,7 +45,14 @@
 		
 	}
 .sale-description{
-	// padding:24px 0;
+	text-align: left;
+	border-right:1px solid #f7f7f8;
+	padding: 0 3vw 0 10px;
+	@media screen and (max-width: $break-sm){
+				text-align: center;
+				padding:10px;
+				border:0;
+			}
 	h1{
 	color:#34404b;
 	font-size: 1.375em;
@@ -49,6 +63,7 @@
 		color:#495662;
 		font-size: 12px;
 		margin-bottom: 0;
+		text-align: left;
 	}
 	}
 }
