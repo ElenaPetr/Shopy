@@ -1,3 +1,6 @@
+h1, h2, p {
+  margin: 0; }
+
 nav {
   background-color: white; }
 
@@ -367,6 +370,56 @@ nav {
       float: left; }
     .best-sales .card-text span:last-child {
       float: right; }
+
+.news {
+  min-height: 120px;
+  background-color: white;
+  line-height: 120px;
+  vertical-align: middle;
+  padding-left: 5vw; }
+  .news h2, .news p {
+    display: inline-block; }
+  .news h2 {
+    color: #ff7013;
+    font-size: 1.125em;
+    font-weight: 800;
+    margin-right: 24px; }
+  .news p {
+    color: #34404b;
+    font-size: 14px;
+    font-style: italic; }
+  .news input:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    background: url(../icons/Mail-Ico.png) no-repeat; }
+
+.form-inline {
+  display: inline-block; }
+  .form-inline input {
+    border: 0;
+    position: relative;
+    font-style: italic;
+    color: #7c8791;
+    font-size: 14px; }
+  .form-inline input:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    background: url(../icons/Mail-Ico.png) no-repeat; }
+  .form-inline .btn {
+    width: 100px;
+    height: 50px;
+    background-color: #ff7013;
+    border-radius: 0;
+    color: white;
+    margin-left: 13vw; }
 
 body {
   background-color: #f6f8f9;

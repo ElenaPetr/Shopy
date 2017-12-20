@@ -1,0 +1,60 @@
+.news{
+	min-height: 120px;
+	background-color: white;
+	line-height: 120px;
+	vertical-align: middle;
+	padding-left: 5vw;
+
+	h2, p{
+		display: inline-block;
+	}
+	h2{
+		color:$orange;
+		font-size: $size;
+		font-weight: 800;
+		margin-right: 24px;
+	}
+	p{
+		color:#34404b;
+		font-size: 14px;
+		font-style: italic;
+	}
+	input:before{
+		position:absolute;
+		content:"";
+		width:18px;
+		height:12px;
+		top:0;
+		left:0;
+		background:url(../icons/Mail-Ico.png) no-repeat;
+	}
+}
+.form-inline{
+	display:inline-block;
+	input{
+		border:0;
+		position:relative;
+		font-style: italic;
+		color:#7c8791;
+		font-size: 14px;
+	}
+	input:before{
+		position:absolute;
+		content:"";
+		width:18px;
+		height:12px;
+		top:0;
+		left:0;
+		background:url(../icons/Mail-Ico.png) no-repeat;
+	}
+	.btn{
+		width:100px;
+		height:50px;
+		background-color:$orange;
+		border-radius: 0;
+		color:white;
+		margin-left: 13vw;
+
+	}
+	
+}
