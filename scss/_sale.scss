@@ -4,18 +4,21 @@
 	position: relative;
 	text-align: center;
 	width:100%;
-	margin-bottom: 30px;
+	padding:10px 0;
 	
 	.sale-logo, .sale-description, .sale-price{
 		display: inline-block;
 		text-align: center;
+		vertical-align: middle;
 	}
 	.sale-logo{
-		width:200px;
+		width:30%;
 		text-align: center;
+		
 	}
 	.sale-price{
 		width:30%;
+		line-height: 80px;
 		img{
 			margin-right: 20px;
 			vertical-align: baseline;
@@ -35,6 +38,7 @@
 		
 	}
 .sale-description{
+	// padding:24px 0;
 	h1{
 	color:#34404b;
 	font-size: 1.375em;
@@ -44,6 +48,7 @@
 	p{
 		color:#495662;
 		font-size: 12px;
+		margin-bottom: 0;
 	}
 	}
 }

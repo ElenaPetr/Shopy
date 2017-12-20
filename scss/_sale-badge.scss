@@ -1,19 +1,25 @@
 .sale{
-	display: inline-block;
-	// margin:25px 50px;
+	margin:0 auto;
 	position: relative;
 	z-index: 50;
+	width:80px;
+	height:80px;
 }
 .sale p{
-	margin-top: 7px;
 	font-size: 12px;
 	color:#ffffff;
 	font-style: italic;
+	margin-bottom: 0;
+}
+.sale p:first-child{
+	position: absolute;
+	top:21%;
+	left:38%;
 }
 .sale p:last-child{
 	position: absolute;
-	top:11px;
-	left:-50%;
+	top:26%;
+	left:22%;
 	margin-top: 10px;
 	font-size:$size;
 	font-style: normal;
@@ -22,8 +28,8 @@
 .sale:before{
 	content: "";
 	position: absolute;
-	top:-8px;
-	left:-25px;
+	top:5px;
+	left:5px;
 	display: inline-block;
 	width:43px;
 	height:35px;
@@ -35,8 +41,8 @@
 .sale:after{
 	content: "";
 	position: absolute;
-	top:8.5px;
-	left:-12.5px;
+	top:21.5px;
+	left:16.5px;
 	display: inline-block;
 	width:43px;
 	height:35px;

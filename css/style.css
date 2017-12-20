@@ -226,15 +226,17 @@ nav {
   position: relative;
   text-align: center;
   width: 100%;
-  margin-bottom: 30px; }
+  padding: 10px 0; }
   .sale-div .sale-logo, .sale-div .sale-description, .sale-div .sale-price {
     display: inline-block;
-    text-align: center; }
+    text-align: center;
+    vertical-align: middle; }
   .sale-div .sale-logo {
-    width: 200px;
+    width: 30%;
     text-align: center; }
   .sale-div .sale-price {
-    width: 30%; }
+    width: 30%;
+    line-height: 80px; }
     .sale-div .sale-price img {
       margin-right: 20px;
       vertical-align: baseline; }
@@ -255,7 +257,8 @@ nav {
     text-transform: uppercase; }
   .sale-div .sale-description p {
     color: #495662;
-    font-size: 12px; }
+    font-size: 12px;
+    margin-bottom: 0; }
 
 .card-text {
   vertical-align: middle;
@@ -269,20 +272,27 @@ nav {
     color: #ff7013; }
 
 .sale {
-  display: inline-block;
+  margin: 0 auto;
   position: relative;
-  z-index: 50; }
+  z-index: 50;
+  width: 80px;
+  height: 80px; }
 
 .sale p {
-  margin-top: 7px;
   font-size: 12px;
   color: #ffffff;
-  font-style: italic; }
+  font-style: italic;
+  margin-bottom: 0; }
+
+.sale p:first-child {
+  position: absolute;
+  top: 21%;
+  left: 38%; }
 
 .sale p:last-child {
   position: absolute;
-  top: 11px;
-  left: -50%;
+  top: 26%;
+  left: 22%;
   margin-top: 10px;
   font-size: 1.125em;
   font-style: normal;
@@ -291,8 +301,8 @@ nav {
 .sale:before {
   content: "";
   position: absolute;
-  top: -8px;
-  left: -25px;
+  top: 5px;
+  left: 5px;
   display: inline-block;
   width: 43px;
   height: 35px;
@@ -304,8 +314,8 @@ nav {
 .sale:after {
   content: "";
   position: absolute;
-  top: 8.5px;
-  left: -12.5px;
+  top: 21.5px;
+  left: 16.5px;
   display: inline-block;
   width: 43px;
   height: 35px;
