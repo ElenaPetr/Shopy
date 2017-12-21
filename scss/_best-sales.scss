@@ -22,7 +22,6 @@
 		padding: 0 30px;
 		font-weight: bold;
 		vertical-align: middle;
-		// text-align: justify;
 		p{
 		color:#34404b;
 		font-size: $size;
@@ -37,5 +36,7 @@
 		}
 		
 	}
-
+&:hover{
+	box-shadow:$shadow;
+	}
 }
