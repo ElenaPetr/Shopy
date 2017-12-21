@@ -10,7 +10,7 @@ $break-sm: 576px;
 	
 	.sale-logo, .sale-description, .sale-price{
 		display: inline-block;
-		text-align: center;
+	 	text-align: center;
 		vertical-align: middle;
 	}
 	.sale-logo{
@@ -67,10 +67,15 @@ $break-sm: 576px;
 	}
 	}
 }
-	.card-text{
-	vertical-align: middle;
+	.sale-text{
+	// vertical-align: middle;
 	display: inline-block;
 	font-size: 1em;
+	position: absolute;	
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+
 	.sale-size{
 		color:#e1e3e5;
 		font-size: 12px;

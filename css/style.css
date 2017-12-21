@@ -276,15 +276,18 @@ nav {
       margin-bottom: 0;
       text-align: left; }
 
-.card-text {
-  vertical-align: middle;
+.sale-text {
   display: inline-block;
-  font-size: 1em; }
-  .card-text .sale-size {
+  font-size: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .sale-text .sale-size {
     color: #e1e3e5;
     font-size: 12px;
     letter-spacing: 6px; }
-  .card-text span {
+  .sale-text span {
     color: #ff7013; }
 
 .sale {
@@ -374,52 +377,46 @@ nav {
 .news {
   min-height: 120px;
   background-color: white;
-  line-height: 120px;
-  vertical-align: middle;
-  padding-left: 5vw; }
+  text-align: center; }
+  .news .string {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 24px;
+    width: 95%;
+    padding: 10px; }
   .news h2, .news p {
     display: inline-block; }
   .news h2 {
     color: #ff7013;
     font-size: 1.125em;
-    font-weight: 800;
-    margin-right: 24px; }
+    font-weight: 800; }
   .news p {
     color: #34404b;
     font-size: 14px;
-    font-style: italic; }
-  .news input:before {
-    position: absolute;
-    content: "";
-    width: 18px;
-    height: 12px;
-    top: 0;
-    left: 0;
-    background: url(../icons/Mail-Ico.png) no-repeat; }
-
-.form-inline {
-  display: inline-block; }
-  .form-inline input {
-    border: 0;
-    position: relative;
     font-style: italic;
-    color: #7c8791;
-    font-size: 14px; }
-  .form-inline input:before {
-    position: absolute;
-    content: "";
-    width: 18px;
-    height: 12px;
-    top: 0;
-    left: 0;
-    background: url(../icons/Mail-Ico.png) no-repeat; }
-  .form-inline .btn {
-    width: 100px;
-    height: 50px;
-    background-color: #ff7013;
-    border-radius: 0;
-    color: white;
-    margin-left: 13vw; }
+    margin-left: 24px; }
+    @media screen and (max-width: 495px) {
+      .news p {
+        margin-left: 0; } }
+
+input {
+  border: 0;
+  font-style: italic;
+  color: #7c8791;
+  font-size: 14px;
+  float: left;
+  width: 160px;
+  margin: 5px;
+  padding: 10px; }
+
+.btn {
+  width: 100px;
+  height: 50px;
+  background-color: #ff7013;
+  border-radius: 0;
+  color: white;
+  float: right; }
 
 body {
   background-color: #f6f8f9;
