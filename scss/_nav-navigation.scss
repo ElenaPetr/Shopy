@@ -1,5 +1,8 @@
 $break-lg:992px;
+
 .navigation{
+	padding-left:$padding-main;
+	padding-right:$padding-main;
 		.collapse {
 			li:not(:last-child){
 				margin-right: 23px;

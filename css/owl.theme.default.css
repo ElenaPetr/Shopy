@@ -15,9 +15,9 @@
     zoom: 1;
     *display: inline; }
     .owl-dots{
-       position: absolute;
+      position: absolute;
       bottom:47%;
-      left:6%;
+      left:0;
       transform:rotate(90deg);
     }
     .owl-theme .owl-dots .owl-dot span {
@@ -28,21 +28,20 @@
       display: block;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease;
-   
       }
 
     .owl-theme .owl-dots .owl-dot.active span {
       width:36px;
-        background: #ff7013;
+      background: #ff7013;
      }
      .owl-theme .owl-dots .owl-dot:hover span{
 
      }
 
-@media(max-width: 650px){
+@media(max-width: 560px){
 
  .owl-dots{
-      left:-10px;
+      left:-25px;
     }
 
 }

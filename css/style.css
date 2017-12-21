@@ -6,7 +6,9 @@ nav {
 
 .contacts {
   min-height: 60px;
-  border-bottom: 1px solid #ebecef; }
+  border-bottom: 1px solid #ebecef;
+  padding-left: 2.494%;
+  padding-right: 2.494%; }
 
 .navigation {
   min-height: 120px; }
@@ -34,7 +36,7 @@ nav {
 
 .mail:before {
   background: url(../icons/Mail-Ico.png) no-repeat;
-  left: -26px; }
+  left: -24px; }
 
 .telefone:before {
   background: url(../icons/Phone-Ico.png) no-repeat;
@@ -43,68 +45,71 @@ nav {
 .post-social a:not(:first-child) {
   margin-left: 16px; }
 
-.navigation .collapse li:not(:last-child) {
-  margin-right: 23px; }
-.navigation .collapse .active > .nav-link {
-  color: #ff7013; }
-.navigation .collapse a {
-  font-size: 16px;
-  color: #44525e;
-  font-weight: 500; }
-.navigation .logo {
-  display: inline-block;
-  margin-right: 65px;
-  padding-bottom: 20px; }
-  @media screen and (max-width: 992px) {
-    .navigation .logo {
-      margin: 0 auto;
-      padding-left: 20px; } }
-  .navigation .logo a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #43525d;
-    font-weight: 900;
-    font-size: 30px;
-    position: relative;
+.navigation {
+  padding-left: 2.494%;
+  padding-right: 2.494%; }
+  .navigation .collapse li:not(:last-child) {
+    margin-right: 23px; }
+  .navigation .collapse .active > .nav-link {
+    color: #ff7013; }
+  .navigation .collapse a {
+    font-size: 16px;
+    color: #44525e;
+    font-weight: 500; }
+  .navigation .logo {
     display: inline-block;
-    width: 118px;
-    position: relative; }
-    .navigation .logo a span:nth-child(2) {
-      float: right;
+    margin-right: 65px;
+    padding-bottom: 20px; }
+    @media screen and (max-width: 992px) {
+      .navigation .logo {
+        margin: 0 auto;
+        padding-left: 20px; } }
+    .navigation .logo a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #43525d;
+      font-weight: 900;
+      font-size: 30px;
+      position: relative;
+      display: inline-block;
+      width: 118px;
       position: relative; }
-    .navigation .logo a span:nth-child(2):before {
+      .navigation .logo a span:nth-child(2) {
+        float: right;
+        position: relative; }
+      .navigation .logo a span:nth-child(2):before {
+        position: absolute;
+        content: '';
+        top: 13px;
+        left: -39px;
+        width: 35px;
+        height: 24px;
+        background: url(../icons/logo.png) no-repeat; }
+      .navigation .logo a span:last-child {
+        font-size: 10px;
+        text-transform: none;
+        font-weight: normal;
+        letter-spacing: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+  .navigation .icons-nav a:not(:last-child) {
+    margin-right: 30px; }
+  .navigation .icons-nav a:last-child {
+    position: relative; }
+    .navigation .icons-nav a:last-child span {
       position: absolute;
-      content: '';
-      top: 13px;
-      left: -39px;
-      width: 35px;
-      height: 24px;
-      background: url(../icons/logo.png) no-repeat; }
-    .navigation .logo a span:last-child {
+      top: -16px;
+      left: 4px;
+      width: 17px;
+      height: 17px;
+      line-height: 18px;
+      background-color: #43525d;
+      color: white;
       font-size: 10px;
-      text-transform: none;
-      font-weight: normal;
-      letter-spacing: 3px;
-      position: absolute;
-      bottom: 0;
-      left: 0; }
-.navigation .icons-nav a:not(:last-child) {
-  margin-right: 30px; }
-.navigation .icons-nav a:last-child {
-  position: relative; }
-  .navigation .icons-nav a:last-child span {
-    position: absolute;
-    top: -16px;
-    left: 4px;
-    width: 17px;
-    height: 17px;
-    line-height: 18px;
-    background-color: #43525d;
-    color: white;
-    font-size: 10px;
-    text-align: center;
-    border-radius: 50%;
-    font-weight: 100; }
+      text-align: center;
+      border-radius: 50%;
+      font-weight: 100; }
 
 .slide {
   height: 50.7vw; }
@@ -121,11 +126,9 @@ nav {
   width: 100%;
   z-index: 6;
   transform: translateY(-50%); }
-  .overlay .container {
-    padding-left: 7vw; }
 
 .text {
-  padding-left: 30px; }
+  padding-left: 3vw; }
   .text h1 {
     font-size: 4.1vw;
     color: #ff7013;
