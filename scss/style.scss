@@ -1,13 +1,5 @@
-@import 'reset';
-@import 'navbar';
-@import 'nav-navigation';
-@import 'carousel';
-@import 'product';
-@import 'sale';
-@import 'sale-badge';
-@import 'best-sales';
-@import 'news-letter';
-@import 'footer';
+@import'helper/variables';
+@import 'reset','navbar','nav-navigation','carousel','product','sale','sale-badge','best-sales','news-letter','footer';
 
 *{
 	transition: 0.3s ease-in-out .2s;
@@ -26,4 +18,11 @@ body{
 .row-main{
 	margin:0;
 }
+@media (max-width: 991px){
+.navbar-expand-lg>.container{
+	padding-left:15px;
+}
+}
+
+
 

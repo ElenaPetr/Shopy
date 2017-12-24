@@ -1,5 +1,6 @@
-h1, h2, p {
-  margin: 0; }
+h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0; }
 
 nav {
   background-color: white; }
@@ -52,8 +53,8 @@ nav {
     margin-right: 23px; }
   .navigation .collapse .active > .nav-link {
     color: #ff7013; }
-  .navigation .collapse a {
-    font-size: 16px;
+  .navigation .collapse .nav-link {
+    font-size: 1em;
     color: #44525e;
     font-weight: 500; }
   .navigation .logo {
@@ -158,14 +159,14 @@ nav {
     font-size: 1.125em;
     font-weight: 600;
     margin-left: 24px; }
-  .text .order:before {
-    position: absolute;
-    content: '';
-    top: 2px;
-    left: 0;
-    width: 25px;
-    height: 18px;
-    background: url(../icons/Cart-Ico.png) no-repeat; }
+    .text .order:before {
+      position: absolute;
+      content: '';
+      top: 2px;
+      left: 0;
+      width: 25px;
+      height: 18px;
+      background: url(../icons/Cart-Ico.png) no-repeat; }
 
 .col-header {
   margin-bottom: 5.8vw; }
@@ -429,13 +430,51 @@ input {
   float: right; }
 
 footer {
-  height: 125px;
-  margin-top: 120px; }
-
-.copyright {
-  font-size: 14px;
-  font-color: #28313b;
-  padding-top: 20px; }
+  margin-top: 120px;
+  height: 242px;
+  background-color: #fff;
+  position: relative; }
+  footer .navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%; }
+    footer .navigation .collapse .navbar-nav:nth-child(2) {
+      margin-right: 35px; }
+    footer .navigation .collapse .nav-item {
+      position: relative; }
+      footer .navigation .collapse .nav-item:before {
+        position: absolute;
+        content: '';
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        background-color: #43525d;
+        top: 15px;
+        left: -6px;
+        font-size: 16px; }
+    footer .navigation .collapse .nav-link {
+      font-size: 0.875em; }
+    footer .navigation .collapse .active.nav-item:before {
+      background-color: #ff7013; }
+  footer .copyright {
+    font-size: 14px;
+    font-color: #28313b;
+    padding-top: 20px; }
+  footer .nav-footer {
+    padding: 5px;
+    font-size: 14px;
+    color: #35404c; }
+  footer .payment {
+    float: right;
+    color: #ff5912;
+    font-size: 1em;
+    font-weight: 600; }
+    footer .payment span {
+      display: block;
+      padding-bottom: 15px; }
+    footer .payment li {
+      display: inline-block; }
 
 * {
   transition: 0.3s ease-in-out .2s; }
@@ -453,5 +492,9 @@ body {
 
 .row-main {
   margin: 0; }
+
+@media (max-width: 991px) {
+  .navbar-expand-lg > .container {
+    padding-left: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
