@@ -8,6 +8,16 @@ $(function(){
     animateIn: 'slideInUp',
     animateOut: 'slideOutUp',
   })
+
+	$(".best-sales").hover(function()
+	{
+		 $(this).find('.card-span').hide();
+        $(this).find('.btn-add').show();
+    },function(){
+    	 $(this).find('.card-span').show();
+        $(this).find('.btn-add').hide();
+    });
+
   
 	
 });

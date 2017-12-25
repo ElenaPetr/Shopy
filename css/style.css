@@ -383,18 +383,13 @@ nav {
         float: right; }
   .best-sales:hover {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); }
-    .best-sales:hover .card-span {
-      display: none; }
-    .best-sales:hover .btn-add {
-      display: block; }
 
 .btn-add {
   display: none;
   background-color: transparent;
   width: 138px;
   margin-top: 8px;
-  text-align: right;
-  transition: .3s ease-in-out .2s; }
+  text-align: right; }
   .btn-add:hover {
     border: 1px solid #ff7013;
     cursor: pointer; }
