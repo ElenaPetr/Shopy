@@ -388,10 +388,13 @@ nav {
 .news {
   min-height: 120px;
   background-color: white;
-  text-align: center; }
+  text-align: justify;
+  margin-left: 30px;
+  position: relative; }
   .news .string {
     position: absolute;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
     padding: 0 24px;
     width: 95%;
@@ -411,17 +414,23 @@ nav {
       .news p {
         margin-left: 0; } }
 
-input {
-  border: 0;
-  font-style: italic;
-  color: #7c8791;
-  font-size: 14px;
-  float: left;
-  width: 160px;
-  margin: 5px;
-  padding: 10px; }
+.form-inline {
+  display: inline-flex; }
+  .form-inline .btn-icon {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0; }
+  .form-inline input {
+    border: 0;
+    font-style: italic;
+    color: #7c8791;
+    font-size: 14px;
+    float: left;
+    width: 160px;
+    margin: 5px;
+    padding: 10px 5px; }
 
-.btn {
+.btn-red {
   width: 100px;
   height: 50px;
   background-color: #ff7013;

@@ -4,14 +4,18 @@
 .news{
 	min-height: 120px;
 	background-color: white;
-	text-align: center;
+	text-align: justify;
+	margin-left: 30px;
+	position: relative;
+		
 	.string{
 		position: absolute;
 		top:50%;
+		left:0;
 		transform:translateY(-50%);
 		padding:0 24px;
 		width:95%;
-		padding:10px;
+		padding:10px;	
 	}
 	h2, p{
 		display: inline-block;
@@ -33,6 +37,13 @@
 	}
 	
 }
+.form-inline{
+	display: inline-flex;
+	.btn-icon{
+		background-color: transparent;
+		padding:0;
+		border-radius: 0;
+	}
 
 	input{
 		border:0;
@@ -42,18 +53,10 @@
 		float:left;
 		width:160px;
 		margin:5px;
-		padding:10px;
+		padding:10px 5px;
 	}
-	// input:before{
-	// 	position:absolute;
-	// 	content:"";
-	// 	width:18px;
-	// 	height:12px;
-	// 	top:0;
-	// 	left:0;
-	// 	background:url(../icons/Mail-Ico.png) no-repeat;
-	// }
-	.btn{
+}
+	.btn-red{
 		width:100px;
 		height:50px;
 		background-color:$orange;
