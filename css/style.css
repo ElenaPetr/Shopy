@@ -190,6 +190,7 @@ nav {
     border: none;
     border-radius: 0;
     margin-bottom: 30px;
+    padding: 30px 0;
     text-align: center;
     font-size: 1.125em;
     font-weight: bold; }
@@ -204,11 +205,7 @@ nav {
 .image {
   height: 270px; }
   .image img {
-    width: 140px;
-    margin-top: 30px; }
-
-.card-focus img {
-  width: 80px; }
+    width: 150px; }
 
 .row-page {
   padding: 0 15px; }
@@ -228,6 +225,43 @@ nav {
     border-radius: 50%;
     margin-right: 4px;
     display: inline-block; }
+
+.card-focus {
+  padding-bottom: 0 !important; }
+  .card-focus .img-product {
+    margin: 0 auto 30px auto;
+    width: 80px; }
+  .card-focus p {
+    color: #ff7013 !important; }
+  .card-focus span {
+    color: #34404b !important;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: pre;
+    margin-bottom: 23px; }
+  .card-focus .product-colors div {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 23px; }
+    .card-focus .product-colors div:first-child {
+      background-color: #e94650; }
+    .card-focus .product-colors div:nth-child(2) {
+      background-color: #43525d; }
+    .card-focus .product-colors div:nth-child(3) {
+      background-color: #44c1ff; }
+    .card-focus .product-colors div:nth-child(4) {
+      background-color: #2fdc7a; }
+  .card-focus .produst-icons {
+    padding-top: 18px;
+    margin: 0 50px;
+    border-top: 1px solid #f5f7f9; }
+    .card-focus .produst-icons a {
+      margin-top: 25px; }
+      .card-focus .produst-icons a:not(:last-child) {
+        margin-right: 25px; }
 
 .sale-div {
   min-height: 100px;
@@ -264,7 +298,7 @@ nav {
       font-size: 20px; }
   .sale-div .sale-description {
     text-align: left;
-    border-right: 1px solid #f7f7f8;
+    border-right: 1px solid #f5f7f9;
     padding: 0 3vw 0 10px; }
     @media screen and (max-width: 576px) {
       .sale-div .sale-description {
@@ -366,7 +400,7 @@ nav {
     margin: 0 auto; }
   .best-sales .card-text {
     display: inline-block;
-    border-left: 1px solid #f7f7f8;
+    border-left: 1px solid #f5f7f9;
     padding: 0 30px;
     font-weight: bold;
     vertical-align: middle; }

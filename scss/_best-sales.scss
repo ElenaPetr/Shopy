@@ -18,7 +18,8 @@
 	}
 	.card-text{
 		display: inline-block;
-		border-left: 1px solid #f7f7f8;
+		border-left:$border;
+
 		padding: 0 30px;
 		font-weight: bold;
 		vertical-align: middle;

@@ -45,7 +45,7 @@
 	}
 .sale-description{
 	text-align: left;
-	border-right:1px solid #f7f7f8;
+	border-right:$border;
 	padding: 0 3vw 0 10px;
 	@media screen and (max-width: $break-sm){
 				text-align: center;
@@ -67,7 +67,6 @@
 	}
 }
 	.sale-text{
-	// vertical-align: middle;
 	display: inline-block;
 	font-size: 1em;
 	position: absolute;	
