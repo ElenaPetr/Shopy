@@ -15,7 +15,8 @@ $(function(){
         $(this).find('.btn-add').show();
     },function(){
     	 $(this).find('.card-span').show();
-        $(this).find('.btn-add').hide();
+       $(this).find('.btn-add').hide();
+        
     });
 
   
