@@ -47,7 +47,7 @@ nav {
   background: url(../icons/Phone-Ico.png) no-repeat;
   left: -20px; }
 
-.post-social a:not(:first-child) {
+.post-social a:not(:first-child), .post-social .filter-label:not(:first-child) {
   margin-left: 16px; }
 
 .navigation {
@@ -69,7 +69,7 @@ nav {
       .navigation .logo {
         margin: 0 auto;
         padding-left: 20px; } }
-    .navigation .logo a {
+    .navigation .logo a, .navigation .logo .filter-label {
       text-transform: uppercase;
       text-decoration: none;
       color: #43525d;
@@ -79,10 +79,10 @@ nav {
       display: inline-block;
       width: 118px;
       position: relative; }
-      .navigation .logo a span:nth-child(2) {
+      .navigation .logo a span:nth-child(2), .navigation .logo .filter-label span:nth-child(2) {
         float: right;
         position: relative; }
-      .navigation .logo a span:nth-child(2):before {
+      .navigation .logo a span:nth-child(2):before, .navigation .logo .filter-label span:nth-child(2):before {
         position: absolute;
         content: '';
         top: 13px;
@@ -90,7 +90,7 @@ nav {
         width: 35px;
         height: 24px;
         background: url(../icons/logo.png) no-repeat; }
-      .navigation .logo a span:last-child {
+      .navigation .logo a span:last-child, .navigation .logo .filter-label span:last-child {
         font-size: 10px;
         text-transform: none;
         font-weight: normal;
@@ -98,11 +98,11 @@ nav {
         position: absolute;
         bottom: 0;
         left: 0; }
-  .navigation .icons-nav a:not(:last-child) {
+  .navigation .icons-nav a:not(:last-child), .navigation .icons-nav .filter-label:not(:last-child) {
     margin-right: 30px; }
-  .navigation .icons-nav a:last-child {
+  .navigation .icons-nav a:last-child, .navigation .icons-nav .filter-label:last-child {
     position: relative; }
-    .navigation .icons-nav a:last-child span {
+    .navigation .icons-nav a:last-child span, .navigation .icons-nav .filter-label:last-child span {
       position: absolute;
       top: -16px;
       left: 4px;
@@ -262,9 +262,9 @@ nav {
     padding-top: 18px;
     margin: 0 50px;
     border-top: 1px solid #f5f7f9; }
-    .card-focus .produst-icons a {
+    .card-focus .produst-icons a, .card-focus .produst-icons .filter-label {
       margin-top: 25px; }
-      .card-focus .produst-icons a:not(:last-child) {
+      .card-focus .produst-icons a:not(:last-child), .card-focus .produst-icons .filter-label:not(:last-child) {
         margin-right: 25px; }
 
 .sale-div {
@@ -543,7 +543,8 @@ footer .payment {
     display: inline-block; }
 
 .left-menu {
-  padding: 40px 40px 28px 40px; }
+  padding: 40px 40px 28px 40px;
+  margin-bottom: 30px; }
   .left-menu h3 {
     margin-bottom: 20px;
     font-size: 1.125em;
@@ -552,13 +553,32 @@ footer .payment {
 
 .list-group-item {
   padding-left: 0; }
-  .list-group-item a {
+  .list-group-item a, .list-group-item .filter-label {
     color: #43525d;
     font-size: 1em;
     font-weight: 700; }
-    .list-group-item a:hover {
-      text-decoration: none;
-      color: #ff7013; }
+  .list-group-item:hover a, .list-group-item:hover .filter-label {
+    text-decoration: none;
+    color: #ff7013; }
+
+.form-check-input {
+  opacity: 0; }
+
+.filter-label {
+  position: relative;
+  padding-left: 13px;
+  transform: translateX(14px); }
+  .filter-label .button {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    top: 6px;
+    left: -14px;
+    background-color: #f1f3f5; }
+  .filter-label input:checked ~ .button {
+    border: 4px solid #ff7013;
+    background-color: #fff; }
 
 * {
   transition: 0.3s ease-in-out .2s; }
