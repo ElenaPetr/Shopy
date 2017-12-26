@@ -42,4 +42,7 @@
   border: 4px solid $orange;
   background-color: #fff;
 }
+input:checked ~ span{
+	color:$orange;
 	}
+}
