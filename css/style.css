@@ -1,4 +1,4 @@
-.left-menu, .list-group-item {
+.left-menu, .list-group-item, .range input {
   border: 0;
   border-radius: 0; }
 
@@ -582,8 +582,40 @@ footer .payment {
   .filter-label input:checked ~ span {
     color: #ff7013; }
 
-* {
-  transition: 0.3s ease-in-out .2s; }
+.price {
+  margin-top: 40px; }
+
+.range {
+  display: inline-block;
+  margin-top: 40px; }
+  .range label {
+    font-size: 14px;
+    font-weight: 600; }
+    .range label:nth-child(2) {
+      margin-left: 20px; }
+  .range input {
+    width: 45px;
+    height: 25px;
+    margin-left: 14px;
+    background-color: #f1f3f5;
+    padding: 5px; }
+
+#custom-handle, #custom-handle_1 {
+  width: 3em;
+  height: 1.6em;
+  top: -875%;
+  font-size: 14px;
+  font-family: 'Harmonia Sans Pro Cyr';
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.6em;
+  border: 0; }
+
+#custom-handle_1 {
+  transform: translateX(-35%); }
+
+#custom-handle {
+  transform: translateX(-18%); }
 
 body {
   background-color: #f6f8f9;
