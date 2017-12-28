@@ -587,12 +587,14 @@ footer .payment {
 
 .range {
   display: inline-block;
-  margin-top: 40px; }
+  margin: 40px auto 0 auto; }
   .range label {
     font-size: 14px;
     font-weight: 600; }
-    .range label:nth-child(2) {
-      margin-left: 20px; }
+    .range label:nth-child(1) {
+      margin-right: 15px; }
+    .range label .to {
+      float: right; }
   .range input {
     width: 45px;
     height: 25px;

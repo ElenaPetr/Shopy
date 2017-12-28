@@ -18,6 +18,7 @@ $(function(){
        $(this).find('.btn-add').hide();
         
     });
+
   var handle = $( "#custom-handle" );
   var handle1 = $( "#custom-handle_1" );
 $( "#slider-range" ).slider({
@@ -37,18 +38,18 @@ $( "#slider-range" ).slider({
     });
      
       $("input#amount").change(function(){
-        var value1 = $("input#amount").val();
+        var value1 = $(this).val();
         // var value2 = $("input#amount_1").val();
         // if( parseInt(value1) > parseInt(value2) ){
         //   value1 = value2;
         //   $("input#amount").val(value1);
         // }
-        $("#slider-range").slider("values", 0, value1);
+       $("#slider-range").slider("values", 0, value1);
       });
 
       $("input#amount_1").change(function(){
         // var value1 = $("input#amount").val();
-        var value2 = $("input#amount_1").val();
+        var value2 = $(this).val();
         // if( parseInt(value1) > parseInt(value2) ){
         //   value2 = value1;
         //   $("input#amount").val(value2);
