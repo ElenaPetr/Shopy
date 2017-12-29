@@ -189,26 +189,69 @@ nav {
 
 .row-product {
   margin-bottom: 38px; }
-  .row-product .product {
-    height: 365px;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 30px;
-    padding: 30px 0;
-    text-align: center;
-    font-size: 1.125em;
-    font-weight: bold; }
-    .row-product .product p {
-      margin-bottom: 16px;
-      color: #34404b; }
-    .row-product .product span {
-      color: #ff5912; }
-    .row-product .product:hover {
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); }
+
+.product {
+  height: 365px;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 30px;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 1.125em;
+  font-weight: bold; }
+  .product p {
+    margin-bottom: 16px;
+    color: #34404b; }
+  .product span {
+    color: #ff5912; }
+  .product .product-info {
+    display: none; }
+    .product .product-info .sizes {
+      display: block;
+      color: #34404b !important;
+      font-size: 14px;
+      font-weight: 500;
+      white-space: pre;
+      margin-bottom: 23px; }
+    .product .product-info .product-colors div {
+      height: 13px;
+      width: 13px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 3px;
+      margin-bottom: 23px; }
+      .product .product-info .product-colors div:first-child {
+        background-color: #e94650; }
+      .product .product-info .product-colors div:nth-child(2) {
+        background-color: #43525d; }
+      .product .product-info .product-colors div:nth-child(3) {
+        background-color: #44c1ff; }
+      .product .product-info .product-colors div:nth-child(4) {
+        background-color: #2fdc7a; }
+    .product .product-info .produst-icons {
+      padding-top: 18px;
+      margin: 0 50px;
+      border-top: 1px solid #f5f7f9; }
+      .product .product-info .produst-icons a, .product .product-info .produst-icons .filter-label {
+        margin-top: 25px; }
+        .product .product-info .produst-icons a:not(:last-child), .product .product-info .produst-icons .filter-label:not(:last-child) {
+          margin-right: 25px; }
+  .product:hover {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); }
+    .product:hover .image {
+      height: 138px; }
+    .product:hover .img-product {
+      width: 80px; }
+    .product:hover p {
+      color: #ff7013; }
+    .product:hover span {
+      display: none; }
+    .product:hover .product-info {
+      display: block; }
 
 .image {
   height: 270px; }
-  .image img {
+  .image .img-product {
     width: 150px; }
 
 .row-page {
@@ -229,43 +272,6 @@ nav {
     border-radius: 50%;
     margin-right: 4px;
     display: inline-block; }
-
-.card-focus {
-  padding-bottom: 0 !important; }
-  .card-focus .img-product {
-    margin: 0 auto 30px auto;
-    width: 80px; }
-  .card-focus p {
-    color: #ff7013 !important; }
-  .card-focus span {
-    color: #34404b !important;
-    font-size: 14px;
-    font-weight: 500;
-    white-space: pre;
-    margin-bottom: 23px; }
-  .card-focus .product-colors div {
-    height: 13px;
-    width: 13px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 3px;
-    margin-bottom: 23px; }
-    .card-focus .product-colors div:first-child {
-      background-color: #e94650; }
-    .card-focus .product-colors div:nth-child(2) {
-      background-color: #43525d; }
-    .card-focus .product-colors div:nth-child(3) {
-      background-color: #44c1ff; }
-    .card-focus .product-colors div:nth-child(4) {
-      background-color: #2fdc7a; }
-  .card-focus .produst-icons {
-    padding-top: 18px;
-    margin: 0 50px;
-    border-top: 1px solid #f5f7f9; }
-    .card-focus .produst-icons a, .card-focus .produst-icons .filter-label {
-      margin-top: 25px; }
-      .card-focus .produst-icons a:not(:last-child), .card-focus .produst-icons .filter-label:not(:last-child) {
-        margin-right: 25px; }
 
 .sale-div {
   min-height: 100px;
@@ -595,6 +601,8 @@ footer .payment {
       margin-right: 15px; }
     .range label .to {
       float: right; }
+    .range label:hover {
+      color: #ff7013; }
   .range input {
     width: 45px;
     height: 25px;

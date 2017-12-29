@@ -19,6 +19,7 @@
 }
 .row-product{
 	margin-bottom: 38px;
+}
 	.product{
 		height:365px;
 		border:none;
@@ -35,52 +36,10 @@
 		span{
 			color:#ff5912;
 		}
-		&:hover{
-	box-shadow:$shadow;
-			}
-	}
-
-	}
-	.image{
-	height: 270px;
-		img{
-  width:150px;
-  // margin-top: 30px;
-	}
-}
-		
-		
-
-.row-page{
-	padding:0 15px;
-}
-.col-page{
-	height:60px;
-	line-height: 60px;
-	background-color: white;
-}
-.page-dots{
-display: inline-block;
-	div{
-		vertical-align: middle;
-		width:8px;
-		height:8px;
-		background-color:$orange;
-		border-radius: 50%;
-		margin-right:4px;
-		display: inline-block;
-	}
-}
-.card-focus{
-	padding-bottom: 0 !important;
-			.img-product{
-			margin:0 auto 30px auto;
-			width:80px;
-		}
-		p{
-			color:$orange !important;
-		}
-	span{
+		.product-info{
+			display:none;
+	.sizes{
+		display: block;
 		color:#34404b !important;
 		font-size: 14px;
 		font-weight: 500;
@@ -122,5 +81,52 @@ display: inline-block;
 				}
 				}
 			}
+			}
+		&:hover{
+			box-shadow:$shadow;
+			.image{
+				height:138px;
+			}
+			.img-product{
+				width:80px
+			}
+			p{
+				color:$orange;
+			}
+			span{
+				display: none;
+			}
+			.product-info{
+				display:block;
+			}
+		}
+	}	
+	.image{
+	height: 270px;
+		.img-product{
+  width:150px;
 	}
-	
+}
+		
+		
+
+.row-page{
+	padding:0 15px;
+}
+.col-page{
+	height:60px;
+	line-height: 60px;
+	background-color: white;
+}
+.page-dots{
+display: inline-block;
+	div{
+		vertical-align: middle;
+		width:8px;
+		height:8px;
+		background-color:$orange;
+		border-radius: 50%;
+		margin-right:4px;
+		display: inline-block;
+	}
+}
