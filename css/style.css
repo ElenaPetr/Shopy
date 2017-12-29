@@ -55,7 +55,7 @@ nav {
   padding-right: 2.494%; }
   .navigation .collapse li:not(:last-child) {
     margin-right: 23px; }
-  .navigation .collapse .active > .nav-link {
+  .navigation .collapse .active > .nav-link, .navigation .collapse .nav-li-main:hover > .nav-link {
     color: #ff7013; }
   .navigation .collapse .nav-link {
     font-size: 1em;
@@ -228,6 +228,8 @@ nav {
         background-color: #44c1ff; }
       .product .product-info .product-colors div:nth-child(4) {
         background-color: #2fdc7a; }
+      .product .product-info .product-colors div:hover {
+        cursor: pointer; }
     .product .product-info .produst-icons {
       padding-top: 18px;
       margin: 0 50px;
@@ -497,6 +499,8 @@ nav {
     width: 160px;
     margin: 5px;
     padding: 10px 5px; }
+    .form-inline input:hover {
+      background-color: #f5f7f9; }
 
 .btn-red {
   width: 100px;
@@ -505,6 +509,9 @@ nav {
   border-radius: 0;
   color: white;
   float: right; }
+
+.btn-red:hover, .btn-icon:hover {
+  cursor: pointer; }
 
 footer .navigation {
   margin-top: 120px;

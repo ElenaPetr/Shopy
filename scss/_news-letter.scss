@@ -54,6 +54,9 @@
 		width:160px;
 		margin:5px;
 		padding:10px 5px;
+		&:hover{
+			background-color:#f5f7f9;
+		}
 	}
 }
 	.btn-red{
@@ -64,3 +67,7 @@
 		color:white;
 		float:right;
 	}
+		.btn-red:hover, .btn-icon:hover{
+		cursor:pointer;
+		}
+	

@@ -6,7 +6,8 @@
 			li:not(:last-child){
 				margin-right: 23px;
 			}
-			.active>.nav-link{
+			
+			.active>.nav-link, .nav-li-main:hover>.nav-link{
 				color:#ff7013;
 			}
 			.nav-link{
